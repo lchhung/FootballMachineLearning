@@ -1,0 +1,116 @@
+# Define here the models for your scraped items
+#
+# See documentation in:
+# https://docs.scrapy.org/en/latest/topics/items.html
+
+import scrapy
+
+
+class PlayerAttributes(scrapy.Item):
+    # define the fields for your item here like:
+    date = scrapy.Field()
+    Team = scrapy.Field()
+    PlayerID = scrapy.Field()
+    fullName = scrapy.Field()
+    name = scrapy.Field()
+    age = scrapy.Field()
+    OVA = scrapy.Field()
+    POT = scrapy.Field()
+    Height = scrapy.Field()
+    Weight = scrapy.Field()
+    FOOT = scrapy.Field()
+    BOV = scrapy.Field()
+    BP = scrapy.Field()
+    GROWTH = scrapy.Field()
+    ATTACHING = scrapy.Field()
+    CROSSING = scrapy.Field()
+    FINISHING = scrapy.Field()
+    HEADING_ACCURACY = scrapy.Field()
+    SHORT_PASSING = scrapy.Field()
+    Volleys = scrapy.Field()
+    TotalSkill = scrapy.Field()
+    Dribbing = scrapy.Field()
+    Curve = scrapy.Field()
+    FkAccuracy = scrapy.Field()
+    LONG_PASSING = scrapy.Field()
+    BallControl = scrapy.Field()
+    TotalMovement = scrapy.Field()
+    Acceleration = scrapy.Field()
+    SprintSpeed = scrapy.Field()
+    Agility = scrapy.Field()
+    Reactions = scrapy.Field()
+    Balance = scrapy.Field()
+    TotalPower = scrapy.Field()
+    ShotPower = scrapy.Field()
+    Jumping = scrapy.Field()
+    Stamina = scrapy.Field()
+    Strength = scrapy.Field()
+    LongShots = scrapy.Field()
+    TotalMentary = scrapy.Field()
+    Aggression = scrapy.Field()
+    Interceptions = scrapy.Field()
+    Positioning = scrapy.Field()
+    Vision = scrapy.Field()
+    Penalties = scrapy.Field()
+    Composure = scrapy.Field()
+    DEFENDING = scrapy.Field()
+    Marking = scrapy.Field()
+    StandingStackle = scrapy.Field()
+    SlidingTackle = scrapy.Field()
+    GOALKEEPING = scrapy.Field()
+    GKDriving = scrapy.Field()
+    GKHandling = scrapy.Field()
+    GKKicking = scrapy.Field()
+    GKPositioning = scrapy.Field()
+    GKReflexes = scrapy.Field()
+    TotalStats = scrapy.Field()
+    BaseStats = scrapy.Field()
+    AttackingWorkRate = scrapy.Field()
+    DefensiveWorkRate = scrapy.Field()
+    Pac = scrapy.Field()
+    SHO = scrapy.Field()
+    Pas = scrapy.Field()
+    Dri = scrapy.Field()
+    DEF = scrapy.Field()
+    PHY = scrapy.Field()
+
+
+class TeamAttributes(scrapy.Item):
+    date = scrapy.Field()
+    team_id = scrapy.Field()
+    team_name = scrapy.Field()
+    OVA = scrapy.Field()
+    ATT = scrapy.Field()
+    MID = scrapy.Field()
+    DEF = scrapy.Field()
+    SPEED = scrapy.Field()
+    DRIBBLING = scrapy.Field()
+    PASSING = scrapy.Field()
+    POSITIONING = scrapy.Field()
+    CROSSING = scrapy.Field()
+    SHOOTING = scrapy.Field()
+    AGGRESSION = scrapy.Field()
+    PRESSURE = scrapy.Field()
+    TEAM_WIDTH = scrapy.Field()
+    DEFENDER_LINE = scrapy.Field()
+    PLAYER_NUM = scrapy.Field()
+    TEAM_AVERAGE_AGE = scrapy.Field()
+
+
+class PlayerMatch(scrapy.Item):
+    date = scrapy.Field()
+    Team = scrapy.Field()
+    PlayerName = scrapy.Field()
+
+class PlayerPremier(scrapy.Item):
+    season = scrapy.Field()
+    playerId = scrapy.Field()
+    playerName = scrapy.Field()
+    statType = scrapy.Field()
+    cleanSheet = scrapy.Field()
+    goalsConceded = scrapy.Field()
+    goal = scrapy.Field()
+
+
+
+
