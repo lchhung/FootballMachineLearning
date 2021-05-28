@@ -9,55 +9,14 @@ import csv
 import pprint as pp
 import pandas as pd
 
-from sofifa_players.sofifa_players.methods import retrievePlayerAttributes
+from methods import retrievePlayerAttributes
 
 start = time.time()
 
 def main():
 
-    # Step 1; Run: scrapy crawl test -o data/test1.jsonlines
-    # Step 2: Run this main file
 
-
-    # file_name = "data//test1.jsonlines"
-    # file_name = "data//test1.csv"
-    # file_name ='test1.jsonlines'
-
-    #footBallTeamNameExtraction(file_name)
-    #footBallTeamAtributesExtraction(file_name)
-    # footballTeamAttributeExtraction(file_name)
-    # playerAttributeExtraction(file_name)
-    # csv = read_file_name(file_name)
-    # for row in csv:
-    #     print(type(row))
-
-    # file_name = "data//2021_04.jsonlines"
-    # contents = retrievePlayerAttributes(file_name, num=1000)
-    # # print(type(contents[0]))
-    # # print((contents[0].keys()))
-    # # print(len(contents))
-    #
-    # columns = ['date', 'Team', 'PlayerID', 'name', 'age', 'OVA', 'POT', 'Height', 'Weight',
-    #            'FOOT', 'BOV', 'BP', 'GROWTH', 'ATTACHING', 'CROSSING', 'FINISHING', 'HEADING_ACCURACY',
-    #            'SHORT_PASSING', 'Volleys', 'TotalSkill', 'Dribbing', 'Curve', 'FkAccuracy', 'LONG_PASSING',
-    #            'BallControl', 'TotalMovement', 'Acceleration', 'SprintSpeed', 'Agility', 'Reactions', 'Balance',
-    #            'TotalPower', 'ShotPower', 'Jumping', 'Stamina', 'Strength', 'LongShots', 'TotalMentary',
-    #            'Aggression', 'Interceptions', 'Positioning', 'Vision', 'Penalties', 'Composure', 'DEFENDING',
-    #            'Marking', 'StandingStackle', 'SlidingTackle', 'GOALKEEPING', 'GKDriving', 'GKHandling',
-    #            'GKKicking', 'GKPositioning', 'GKReflexes', 'TotalStats',
-    #            'BaseStats', 'AttackingWorkRate', 'DefensiveWorkRate', 'Pac', 'SHO', 'Pas', 'Dri', 'DEF', 'PHY']
-    # frame = []
-    # for content in contents:
-    #     df = pd.DataFrame(content)
-    #     frame.append(df)
-    # print(frame)
-    #
-    # df1 = pd.concat(frame)
-    # df1.reset_index(drop=True, inplace= True)
-    # df1.to_csv("2021_players.csv")
-    # print(df1.head(10))
-
-    file_path = glob.glob(r'data//2020_2021//*.jsonlines')
+    file_path = glob.glob(r'data//2016_2017//*.jsonlines')
 
     list = []
     for file_name in file_path:
@@ -88,7 +47,7 @@ def main():
         list.append(players_month)
     sofifa_players_stats_list =pd.concat(list)
     sofifa_players_stats_list.reset_index(drop=True, inplace=True)
-    sofifa_players_stats_list['date'] = sofifa_players_stats_list['date'] + "-01"
+    sofifa_players_stats_list['date'] = sofifa_players_stats_list['date']
     names = sofifa_players_stats_list['name']
     teams =sofifa_players_stats_list['Team']
     sofifa_players_stats_list.drop(columns='Height', axis='columns', inplace=True)
@@ -144,6 +103,11 @@ def main():
             team = 'Sheffield Utd'
         if (team == 'Norwich City'):
             team = 'Norwich'
+        if (team == 'Hull City'):
+            team = 'Hull'
+        if (team == 'Swansea City'):
+            team = 'Swansea'
+
         # print(team)
         team_list.append(team)
 
@@ -151,7 +115,7 @@ def main():
     sofifa_players_stats_list['Team'] = team_list
 
 
-    sofifa_players_stats_list.to_csv("2020_2021_sofifa_players_stats.csv")
+    sofifa_players_stats_list.to_csv("2016_2017_sofifa_players_stats_add.csv")
     print(sofifa_players_stats_list.columns)
 
 

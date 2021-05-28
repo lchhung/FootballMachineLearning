@@ -84,6 +84,7 @@ def retrievePlayerAttributes(file_name, num):
         player_list = []
         while num > 0:
             item = next(obj)
+            print(len(item))
             player_list.append(item)
             num = num - 1
 

@@ -1,0 +1,199 @@
+,matchdate,teamId,playerId,firstName,lastName,position,fullPosition
+0,2015-12-19,36,1943,Darren,Fletcher,M,Centre Central Midfielder
+1,2015-12-19,36,3156,Jonny,Evans,D,Centre Central Defender
+2,2015-12-19,36,6030,Salomón,Rondón,F,Centre Striker
+3,2015-12-19,36,4395,James,McClean,M,Left Winger
+4,2015-12-19,36,3744,Chris,Brunt,M,Left Attacking Midfielder
+5,2015-12-19,36,4198,Craig,Dawson,D,Centre Central Defender
+6,2015-12-19,36,2529,James,Morrison,M,Right Winger
+7,2015-12-19,36,2011,Boaz,Myhill,G,Goalkeeper
+8,2015-12-19,36,3734,Jonas,Olsson,D,Centre Central Defender
+9,2015-12-19,36,4437,Gareth,McAuley,D,Centre Central Defender
+10,2015-12-19,36,2847,Craig,Gardner,M,Centre/Right Central Midfielder
+11,2015-12-19,127,3766,Junior,Stanislas,M,Left/Right Winger
+12,2015-12-19,127,3512,Adam,Smith,D,Right Full Back
+13,2015-12-19,127,2338,Andrew,Surman,M,Centre Central Midfielder
+14,2015-12-19,127,8045,Steve,Cook,D,Left/Centre/Right Central Defender
+15,2015-12-19,127,8050,Harry,Arter,M,Centre Central Midfielder
+16,2015-12-19,127,3934,Matt,Ritchie,M,Left/Right Winger
+17,2015-12-19,127,8044,Simon,Francis,D,Centre/Right Central Defender
+18,2015-12-19,127,3390,Dan,Gosling,M,Centre/Right Central Midfielder
+19,2015-12-19,127,3242,Charlie,Daniels,D,Left Full Back
+20,2015-12-19,127,4601,Artur,Boruc,G,Goalkeeper
+21,2015-12-19,127,4772,Glenn,Murray,F,Centre Striker
+22,2015-12-19,23,7114,Georginio,Wijnaldum,M,Centre Attacking Midfielder
+23,2015-12-19,23,10480,Daryl,Janmaat,D,Right Full Back
+24,2015-12-19,23,3713,Jack,Colback,M,Left/Centre Central Midfielder
+25,2015-12-19,23,4885,Siem,de Jong,M,Left/Centre/Right Attacking Midfielder
+26,2015-12-19,23,4549,Moussa,Sissoko,M,Left/Centre/Right Attacking Midfielder
+27,2015-12-19,23,4346,Papiss Demba,Cissé,F,Centre Striker
+28,2015-12-19,23,4550,Vurnon,Anita,M,Left/Centre/Right Defensive Midfielder
+29,2015-12-19,23,2214,Robert,Elliot,G,Goalkeeper
+30,2015-12-19,23,5850,Chancel,Mbemba,D,Centre/Right Central Defender
+31,2015-12-19,23,4340,Paul,Dummett,D,Left Full Back
+32,2015-12-19,23,3680,Fabricio,Coloccini,D,Centre Central Defender
+33,2015-12-19,2,10430,Carlos,Sánchez,M,Centre Central Midfielder
+34,2015-12-19,2,4721,Leandro,Bacuna,M,Right Winger
+35,2015-12-19,2,2574,Joleon,Lescott,D,Centre Central Defender
+36,2015-12-19,2,3506,Alan,Hutton,D,Right Full Back
+37,2015-12-19,2,3558,Brad,Guzan,G,Goalkeeper
+38,2015-12-19,2,12582,Idrissa,Gueye,M,Centre Defensive Midfielder
+39,2015-12-19,2,5595,Jordan,Ayew,F,Centre Striker
+40,2015-12-19,2,2892,Scott,Sinclair,M,Left/Right Winger
+41,2015-12-19,2,4719,Jores,Okore,D,Centre Central Defender
+42,2015-12-19,2,4489,Ashley,Westwood,M,Centre Central Midfielder
+43,2015-12-19,2,13128,Jordan,Veretout,M,Centre Central Midfielder
+44,2015-12-14,26,3670,Danny,Drinkwater,M,Centre Central Midfielder
+45,2015-12-14,26,3157,Danny,Simpson,D,Right Full Back
+46,2015-12-14,26,5371,Christian,Fuchs,D,Left Full Back
+47,2015-12-14,26,8983,Riyad,Mahrez,M,Left/Right Winger
+48,2015-12-14,26,8979,Jamie,Vardy,F,Centre Striker
+49,2015-12-14,26,13492,N'Golo,Kanté,M,Centre Central Midfielder
+50,2015-12-14,26,2508,Kasper,Schmeichel,G,Goalkeeper
+51,2015-12-14,26,8966,Wes,Morgan,D,Centre Central Defender
+52,2015-12-14,26,3564,Marc,Albrighton,M,Left/Right Winger
+53,2015-12-14,26,2053,Robert,Huth,D,Centre Central Defender
+54,2015-12-14,26,8174,Leonardo,Ulloa,F,Centre Striker
+55,2015-12-14,4,4103,Ramires,Santos do Nascimento,M,Centre/Right Central Midfielder
+56,2015-12-14,4,4501,Oscar,dos Santos Emboaba Junior,M,Centre Attacking Midfielder
+57,2015-12-14,4,4496,César,Azpilicueta,D,Left/Right Full Back
+58,2015-12-14,4,4941,Diego,Da Silva Costa,F,Centre Striker
+59,2015-12-14,4,4503,Eden,Hazard,F,Left/Centre/Right Second Striker
+60,2015-12-14,4,3360,Branislav,Ivanovic,D,Centre/Right Central Defender
+61,2015-12-14,4,1353,John,Terry,D,Centre Central Defender
+62,2015-12-14,4,4911,Thibaut,Courtois,G,Goalkeeper
+63,2015-12-14,4,5175,Kurt,Zouma,D,Centre Central Defender
+64,2015-12-14,4,4748,Willian,Borges Da Silva,F,Left/Centre/Right Winger
+65,2015-12-14,4,3861,Nemanja,Matic,M,Centre Central Midfielder
+66,2015-12-13,2,12582,Idrissa,Gueye,M,Centre Defensive Midfielder
+67,2015-12-13,2,10430,Carlos,Sánchez,M,Centre Central Midfielder
+68,2015-12-13,2,4721,Leandro,Bacuna,M,Right Winger
+69,2015-12-13,2,2574,Joleon,Lescott,D,Centre Central Defender
+70,2015-12-13,2,3506,Alan,Hutton,D,Right Full Back
+71,2015-12-13,2,3558,Brad,Guzan,G,Goalkeeper
+72,2015-12-13,2,4740,Rudy,Gestede,F,Centre Striker
+73,2015-12-13,2,5595,Jordan,Ayew,F,Centre Striker
+74,2015-12-13,2,2892,Scott,Sinclair,M,Left/Right Winger
+75,2015-12-13,2,4719,Jores,Okore,D,Centre Central Defender
+76,2015-12-13,2,13128,Jordan,Veretout,M,Centre Central Midfielder
+77,2015-12-13,1,3548,Aaron,Ramsey,M,Centre Central Midfielder
+78,2015-12-13,1,4254,Joel,Campbell,F,Left/Centre Striker
+79,2015-12-13,1,4481,Olivier,Giroud,F,Centre Striker
+80,2015-12-13,1,4474,Héctor,Bellerín,D,Right Full Back
+81,2015-12-13,1,4714,Mesut,Özil,M,Centre/Right Attacking Midfielder
+82,2015-12-13,1,4472,Ignacio,Monreal,D,Left Full Back
+83,2015-12-13,1,4030,Laurent,Koscielny,D,Centre Central Defender
+84,2015-12-13,1,2651,Petr,Cech,G,Goalkeeper
+85,2015-12-13,1,4246,Per,Mertesacker,D,Centre Central Defender
+86,2015-12-13,1,2839,Theo,Walcott,F,Centre/Right Second Striker
+87,2015-12-13,1,2611,Mathieu,Flamini,M,Centre Defensive Midfielder
+88,2015-12-13,10,4604,Nathaniel,Clyne,D,Right Full Back
+89,2015-12-13,10,2100,James,Milner,M,Left/Centre/Right Central Midfielder
+90,2015-12-13,10,4525,Philippe,Coutinho Correia,M,Left/Centre Attacking Midfielder
+91,2015-12-13,10,4618,Adam,Lallana,M,Left/Centre/Right Attacking Midfielder
+92,2015-12-13,10,4813,Dejan,Lovren,D,Centre Central Defender
+93,2015-12-13,10,4179,Simon,Mignolet,G,Goalkeeper
+94,2015-12-13,10,3712,Jordan,Henderson,M,Centre Central Midfielder
+95,2015-12-13,10,7219,Alberto,Moreno,D,Left Full Back
+96,2015-12-13,10,3404,Martin,Skrtel,D,Centre Central Defender
+97,2015-12-13,10,5001,Emre,Can,M,Centre/Right Central Midfielder
+98,2015-12-13,10,4492,Christian,Benteke,F,Centre Striker
+99,2015-12-13,36,2529,James,Morrison,M,Right Winger
+100,2015-12-13,36,3156,Jonny,Evans,D,Centre Central Defender
+101,2015-12-13,36,3744,Chris,Brunt,M,Left Attacking Midfielder
+102,2015-12-13,36,4395,James,McClean,M,Left Winger
+103,2015-12-13,36,1943,Darren,Fletcher,M,Centre Central Midfielder
+104,2015-12-13,36,6030,Salomón,Rondón,F,Centre Striker
+105,2015-12-13,36,4198,Craig,Dawson,D,Centre Central Defender
+106,2015-12-13,36,2011,Boaz,Myhill,G,Goalkeeper
+107,2015-12-13,36,3734,Jonas,Olsson,D,Centre Central Defender
+108,2015-12-13,36,4437,Gareth,McAuley,D,Centre Central Defender
+109,2015-12-13,36,2847,Craig,Gardner,M,Centre/Right Central Midfielder
+110,2015-12-13,21,3955,Kyle,Walker,D,Right Full Back
+111,2015-12-13,21,4430,Tom,Carroll,M,Centre Central Midfielder
+112,2015-12-13,21,4666,Jan,Vertonghen,D,Centre Central Defender
+113,2015-12-13,21,4916,Toby,Alderweireld,D,Centre/Right Central Defender
+114,2015-12-13,21,4664,Hugo,Lloris,G,Goalkeeper
+115,2015-12-13,21,3960,Harry,Kane,F,Centre Striker
+116,2015-12-13,21,4845,Christian,Eriksen,M,Left/Centre/Right Attacking Midfielder
+117,2015-12-13,21,4842,Erik,Lamela,M,Centre/Right Attacking Midfielder
+118,2015-12-13,21,4112,Eric,Dier,M,Centre Defensive Midfielder
+119,2015-12-13,21,9167,Dele,Alli,M,Centre Attacking Midfielder
+120,2015-12-13,21,3507,Danny,Rose,D,Left Full Back
+121,2015-12-13,23,7114,Georginio,Wijnaldum,M,Centre Attacking Midfielder
+122,2015-12-13,23,10480,Daryl,Janmaat,D,Right Full Back
+123,2015-12-13,23,3713,Jack,Colback,M,Left/Centre Central Midfielder
+124,2015-12-13,23,4549,Moussa,Sissoko,M,Left/Centre/Right Attacking Midfielder
+125,2015-12-13,23,4885,Siem,de Jong,M,Left/Centre/Right Attacking Midfielder
+126,2015-12-13,23,4346,Papiss Demba,Cissé,F,Centre Striker
+127,2015-12-13,23,4550,Vurnon,Anita,M,Left/Centre/Right Defensive Midfielder
+128,2015-12-13,23,2214,Robert,Elliot,G,Goalkeeper
+129,2015-12-13,23,5850,Chancel,Mbemba,D,Centre/Right Central Defender
+130,2015-12-13,23,4340,Paul,Dummett,D,Left Full Back
+131,2015-12-13,23,3680,Fabricio,Coloccini,D,Centre Central Defender
+132,2015-12-12,14,3681,Sebastien,Bassong,D,Centre Central Defender
+133,2015-12-12,14,3811,Nathan,Redmond,M,Left/Right Winger
+134,2015-12-12,14,4560,Alexander,Tettey,M,Centre Defensive Midfielder
+135,2015-12-12,14,4357,Wes,Hoolahan,M,Left Central Midfielder
+136,2015-12-12,14,4158,Robbie,Brady,M,Left Winger
+137,2015-12-12,14,2550,Gary,O'Neil,M,Centre/Right Central Midfielder
+138,2015-12-12,14,4130,Andre,Wisdom,D,Right Full Back
+139,2015-12-12,14,4347,Declan,Rudd,G,Goalkeeper
+140,2015-12-12,14,4349,Russell,Martin,D,Centre/Right Central Defender
+141,2015-12-12,14,2867,Martin,Olsson,D,Left Full Back
+142,2015-12-12,14,2530,Cameron,Jerome,F,Centre Striker
+143,2015-12-12,7,4777,Gerard,Deulofeu,F,Left/Centre/Right Second Striker
+144,2015-12-12,7,3030,Leighton,Baines,D,Left Full Back
+145,2015-12-12,7,4701,Arouna,Koné,F,Centre Striker
+146,2015-12-12,7,4505,John,Stones,D,Right Full Back
+147,2015-12-12,7,3448,Tom,Cleverley,M,Centre Central Midfielder
+148,2015-12-12,7,4290,Romelu,Lukaku,F,Centre Striker
+149,2015-12-12,7,13387,Ramiro,Funes Mori,D,Centre Central Defender
+150,2015-12-12,7,2516,Tim,Howard,G,Goalkeeper
+151,2015-12-12,7,4115,Ross,Barkley,M,Left/Centre/Right Attacking Midfielder
+152,2015-12-12,7,3600,Séamus,Coleman,D,Right Full Back
+153,2015-12-12,7,1308,Gareth,Barry,M,Centre Central Midfielder
+154,2015-12-12,6,3807,Scott,Dann,D,Centre Central Defender
+155,2015-12-12,6,4084,Jason David Ian,Puncheon,M,Left/Centre/Right Attacking Midfielder
+156,2015-12-12,6,4341,Yohan,Cabaye,M,Centre Central Midfielder
+157,2015-12-12,6,3929,Joel,Ward,D,Right Full Back
+158,2015-12-12,6,4763,Yannick,Bolasie,M,Left/Right Winger
+159,2015-12-12,6,4396,Connor,Wickham,F,Centre Striker
+160,2015-12-12,6,10444,Pape,Souaré,D,Left Full Back
+161,2015-12-12,6,2569,Wayne,Hennessey,G,Goalkeeper
+162,2015-12-12,6,1911,Damien,Delaney,D,Centre Central Defender
+163,2015-12-12,6,4539,Wilfried,Zaha,F,Left/Centre/Right Winger
+164,2015-12-12,6,4224,James,McArthur,M,Centre Central Midfielder
+165,2015-12-12,20,4605,Maya,Yoshida,D,Centre Central Defender
+166,2015-12-12,20,5140,Virgil,van Dijk,D,Centre Central Defender
+167,2015-12-12,20,3206,Shane,Long,F,Centre Striker
+168,2015-12-12,20,2886,Ryan,Bertrand,D,Left Full Back
+169,2015-12-12,20,4816,Victor,Wanyama,M,Centre Defensive Midfielder
+170,2015-12-12,20,6519,Sadio,Mané,M,Left Winger
+171,2015-12-12,20,4606,José Miguel,da Rocha Fonte,D,Centre Central Defender
+172,2015-12-12,20,2423,Steven,Davis,M,Centre/Right Central Midfielder
+173,2015-12-12,20,4600,Paulo,Gazzaniga,G,Goalkeeper
+174,2015-12-12,20,4286,Oriol,Romeu,M,Centre Defensive Midfielder
+175,2015-12-12,20,11347,Cédric Ricardo,Alves Soares,D,Right Full Back
+176,2015-12-12,11,4803,Jesús,Navas,M,Right Winger
+177,2015-12-12,11,3311,Bacary,Sagna,D,Right Full Back
+178,2015-12-12,11,3143,Joe,Hart,G,Goalkeeper
+179,2015-12-12,11,4145,David,Silva,M,Left/Centre/Right Attacking Midfielder
+180,2015-12-12,11,4838,Wilfried,Bony,F,Centre Striker
+181,2015-12-12,11,5334,Eliaquim,Mangala,D,Centre Central Defender
+182,2015-12-12,11,4148,Yaya,Touré,M,Centre Central Midfielder
+183,2015-12-12,11,4804,Fernando,Luiz Rosa,M,Centre Defensive Midfielder
+184,2015-12-12,11,6058,Nicolás,Otamendi,D,Centre Central Defender
+185,2015-12-12,11,2413,Gaël,Clichy,D,Left Full Back
+186,2015-12-12,11,4316,Raheem,Sterling,F,Left/Centre/Right Second Striker
+187,2015-12-12,45,5672,Federico,Fernández,D,Centre Central Defender
+188,2015-12-12,45,4656,Sung-Yueng,Ki,M,Centre Central Midfielder
+189,2015-12-12,45,2681,Wayne,Routledge,M,Right Winger
+190,2015-12-12,45,4403,Ashley,Williams,D,Centre Central Defender
+191,2015-12-12,45,4405,Angel,Rangel,D,Right Full Back
+192,2015-12-12,45,5594,André,Ayew,M,Left/Right Winger
+193,2015-12-12,45,3309,Lukasz,Fabianski,G,Goalkeeper
+194,2015-12-12,45,2152,Leon,Britton,M,Centre Central Midfielder
+195,2015-12-12,45,2889,Jack,Cork,M,Centre Central Midfielder
+196,2015-12-12,45,4402,Neil,Taylor,D,Left Full Back
+197,2015-12-12,45,4421,Gylfi,Sigurdsson,M,Centre Attacking Midfielder

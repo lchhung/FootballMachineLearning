@@ -108,12 +108,14 @@ def get_player_team(match_ids):
     player_id_list = []
     played_date = []
 
-    for i in range(len(match_ids)):
+    # for i in range(328, len(match_ids)):
+    for i in range(328, 334):
         # for i in range(63, 84):
         # Error at i = 28
         # Error at i = 41
         print(i)
         updated_url = url.format(match_ids[i])
+        print(match_ids[i])
 
         response = requests.get(updated_url)
 
@@ -144,12 +146,15 @@ def get_player_team(match_ids):
         for i in range(2):
             # print(pp.pprint(stats['teamLists'][i].keys()))
             player_team_id = stats['teamLists'][i]['teamId']
+            print(player_team_id)
             player_no = 11
             for j in range(0, player_no):
                 line_up = stats['teamLists'][i]['lineup'][j]
+                # print(line_up)
                 position = line_up['info']['position']
                 playerId = line_up['id']
                 player_id_list.append(playerId)
+                # print(player_id_list)
                 player_position_short.append(position)
                 # shirtNum = line_up['info']['shirtNum']
                 # t_shirt_num.append(shirtNum)
@@ -176,7 +181,7 @@ def get_player_team(match_ids):
     #                            "fullPosition": player_position_long})
 
     # print(players_df.head(100))
-    players_df.to_csv("player/PL_player_team_2020_2021_n.csv")
+    players_df.to_csv("player/PL_player_team_2015_2016_3.csv")
 
     team_match_df = pd.DataFrame(
         {"season": season_list, "matchId": match_id, "matchDate": match_date, "homeTeamId": home_team_id,
@@ -184,7 +189,7 @@ def get_player_team(match_ids):
          "awayTeamName": away_team_name, "homeTeamScore": home_team_score,
          "awayTeamScore": away_team_score})
 
-    team_match_df.to_csv("team/PL_match_team_2020_2021_n.csv")
+    team_match_df.to_csv("team/PL_match_team_2015_2016_3.csv")
     # print(team_match_df.head(100))
     return players_df, team_match_df
 

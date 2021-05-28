@@ -23,7 +23,7 @@ def main():
 
     # Step 1:
     # Read matchID list from html files
-    htm_file = "match_id_2020_2021_n.htm"
+    htm_file = "match_id_2015_2016.htm"
     final_match_id_list= get_match_id_list_from_html(htm_file)
     print("Match ID list for the PremierLeague season 2020/2021")
     print(pp.pprint(final_match_id_list))
@@ -32,7 +32,7 @@ def main():
     # Get list of team and players for each match
     players_df, team_match_df = get_player_team(final_match_id_list)
 
-    #
+
     # # Step 3:
     # col = ['matchdate', 'teamId', 'playerId', 'firstName',
     #    'lastName', 'position', 'fullPosition']
@@ -47,9 +47,6 @@ def main():
 
 
     ###########NEW###################
-    match_id = [59230]
-
-
 
 if __name__ == "__main__":
     main()

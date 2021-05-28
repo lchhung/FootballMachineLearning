@@ -1,0 +1,6 @@
+id,season,matchId,matchDate,homeTeamId,homeTeamName,awayTeamID,awayTeamName,homeTeamScore,awayTeamScore
+0,2016/17,14299,2017-02-25,36,West Brom,127,AFC Bournemouth,2,1
+1,2016/17,14298,2017-02-25,33,Watford,25,West Ham,1,1
+2,2016/17,14281,2017-02-13,127,AFC Bournemouth,11,Man City,0,2
+3,2016/17,14282,2017-02-12,43,Burnley,4,Chelsea,1,1
+4,2016/17,14288,2017-02-12,45,Swansea,26,Leicester,2,0
