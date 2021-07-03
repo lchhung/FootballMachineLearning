@@ -17,21 +17,11 @@ class PlayerInforExtractionFifa(scrapy.Spider):
     def start_requests(self):
 
         url = 'https://sofifa.com/players?keyword=Calum&r=170098&set=true'
-        #
 
-        # url = 'https://sofifa.com/players?type=all&lg%5B0%5D=13&tm%5B0%5D=8&showCol%5B%5D=pi&showCol%5B%5D=ae&showCol%5B%5D=hi&showCol%5B%5D=wi&showCol%5B%5D=pf&showCol%5B%5D=oa&showCol%5B%5D=pt&showCol%5B%5D=bo&showCol%5B%5D=bp&showCol%5B%5D=gu&showCol%5B%5D=ta&showCol%5B%5D=cr&showCol%5B%5D=fi&showCol%5B%5D=he&showCol%5B%5D=sh&showCol%5B%5D=vo&showCol%5B%5D=ts&showCol%5B%5D=dr&showCol%5B%5D=cu&showCol%5B%5D=fr&showCol%5B%5D=lo&showCol%5B%5D=bl&showCol%5B%5D=to&showCol%5B%5D=ac&showCol%5B%5D=sp&showCol%5B%5D=ag&showCol%5B%5D=re&showCol%5B%5D=ba&showCol%5B%5D=tp&showCol%5B%5D=so&showCol%5B%5D=ju&showCol%5B%5D=st&showCol%5B%5D=sr&showCol%5B%5D=ln&showCol%5B%5D=te&showCol%5B%5D=ar&showCol%5B%5D=in&showCol%5B%5D=po&showCol%5B%5D=vi&showCol%5B%5D=pe&showCol%5B%5D=cm&showCol%5B%5D=td&showCol%5B%5D=ma&showCol%5B%5D=sa&showCol%5B%5D=sl&showCol%5B%5D=tg&showCol%5B%5D=gd&showCol%5B%5D=gh&showCol%5B%5D=gc&showCol%5B%5D=gp&showCol%5B%5D=gr&showCol%5B%5D=tt&showCol%5B%5D=bs&showCol%5B%5D=wk&showCol%5B%5D=sk&showCol%5B%5D=aw&showCol%5B%5D=dw&showCol%5B%5D=pac&showCol%5B%5D=sho&showCol%5B%5D=pas&showCol%5B%5D=dri&showCol%5B%5D=def&showCol%5B%5D=phy'
-
-        # season_2021_2020 = [210040, 210032, 210027, 210021, 210018, 210012, 210006, 200060, 200056,]
-        # season_2020_2019 = [200052, 200047, 200040, 200035, 200030, 200026, 200021, .
-        # 200016, 200010, 200007, 190075, 190073,190073]
-        #season_2018_2019 = [190067, 190061, 190053, 190043, 190038, 190029, 190022, 190019, 190010,
-        # 180084, 180080, 180078]
-        #season_2017_2018 = [180076, 180068, ]
         r = 150054 # Please change this value according to sofifa website
         domain = url.format(r)
 
-        # offsets = [0, 60, 120, 180, 240, 300, 360, 420, 480, 540, 600]  # To nevagite the page
-        offsets = [60]
+        offsets = [0, 60, 120, 180, 240, 300, 360, 420, 480, 540, 600]  # To nevagite the page
         date = '2015-08-14'
         for offset in offsets:
 

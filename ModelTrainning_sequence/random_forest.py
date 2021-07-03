@@ -42,23 +42,43 @@ def main():
                  'a_matchDate','h_homeTeamId',
                  'a_homeTeamId','h_awayTeamId',
                  'a_awayTeamId', 'h_homeTeamScore',
-                 'h_awayTeamScore']
+                 'h_awayTeamScore',
+                 'H_Dri', 'A_Dri', 'H_BaseStats',
+                 'A_BaseStats', 'H_Pac', 'A_Pac',
+                 'A_PHY', 'H_PHY', 'H_Pas', 'A_Pas',
+                 'H_SHO', 'A_SHO',
+                 'H_GROWTH', 'A_GROWTH', 'A_DEF', 'H_DEF']
 
     final_dataset.drop(drop_feat, axis= 1,inplace=True)
 
     # 5. Show variation of features by using describe() method
-    # des_feat = final_dataset.describe()
-    # print(des_feat)
+    des_feat = final_dataset.describe()
+    print(des_feat)
 
     #6. Assign win label for home team, and name it as home_win
+
+    # h_win_label = []
+    # for label in final_dataset['label']:
+    #     if label > 0:
+    #         h_win = 1
+    #     else:
+    #         h_win = 0
+    #
+    #     h_win_label.append(h_win)
 
     h_win_label = []
     for label in final_dataset['label']:
         if label > 0:
             h_win = 1
-        else:
+
+        elif (label == 0):
             h_win = 0
+        else:
+            h_win = 2
+
         h_win_label.append(h_win)
+
+
 
     final_dataset['home_win'] = h_win_label
 
@@ -99,8 +119,8 @@ def main():
     # 10. Split dataset for training and testing
     X_train, X_test, y_train, y_test = train_test_split(standadised_X, y_true, test_size=0.33, random_state=42)
     # print(X_train)
-
-    rf = RandomForestClassifier(criterion='entropy', oob_score=True, random_state=42)
+    model_name = "RandForest"
+    model = RandomForestClassifier(random_state=42)
 
     #  Feature selection abd training + testing
     stage = 0
@@ -131,7 +151,7 @@ def main():
 
     stage_highest_kappa_score = []
 
-    while (stage < 2):
+    while (stage < 47):
 
         stage_X_train = copy.deepcopy(X_train)
         stage_X_test = copy.deepcopy(X_test)
@@ -141,11 +161,9 @@ def main():
             stage_X_train.drop(stage_drop_features_list, axis=1, inplace=True)
             stage_X_test.drop(stage_drop_features_list, axis=1, inplace=True)
 
-        stage_drop_feature = []
-        # print("Current stage :", stage)
-        # Drop each pair of feature types
-        drop_num = 54 - stage
-        fix_num = 55 - int(len(stage_drop_features_list)/2)
+
+        drop_num = 46 - stage
+        fix_num = 47 - int(len(stage_drop_features_list)/2)
 
         # Initialise feature to drop + highest scores
         updated_drop_features_list = []
@@ -162,8 +180,6 @@ def main():
         highest_away_recall = [0]
 
         highest_kappa = [0]
-
-
 
         iteration_features = stage_X_train.columns
         feat_list = []
@@ -192,8 +208,8 @@ def main():
                 updated_X_test.drop(d, axis=1, inplace=True)
                 drop_num -= 1
 
-            rf.fit(updated_X_train, y_train)
-            y_pred = rf.predict(updated_X_test)
+            model.fit(updated_X_train, y_train)
+            y_pred = model.predict(updated_X_test)
 
             # Measure the performance of the model
             # confusion = confusion_matrix(y_test, y_pred)
@@ -269,6 +285,10 @@ def main():
                 all_original_scores_list.append(original_support)
                 all_original_scores_name_list.append('support')
 
+                original_kapa_score = current_cohen_kappa_score
+                all_original_scores_list.append(original_kapa_score)
+                all_original_scores_name_list.append("Kapa_score")
+
 
             if (iteration == 1):
                 highest_accuracy[0] = current_accuracy
@@ -320,12 +340,8 @@ def main():
 
             print("\n" + 100 * "#")
 
-            # Weighted score: https://towardsdatascience.com/multi-class-metrics-made-simple-part-ii-the-f1-score-ebe8b2c2ca1
-            df_original_score = pd.DataFrame(
-                {"score_name": all_original_scores_name_list, "scores": all_original_scores_list})
-            print(df_original_score)
+            print("Number of reduced features = ", len(stage_drop_features_list))
 
-            print("\n" + 100 * "#")
 
             iteration += 1
         # Update measure by f-score
@@ -364,31 +380,44 @@ def main():
         stage_kappa_records.append(stage)
         stage_highest_kappa_score.append(highest_kappa[0])
 
-        print("Remain features", stage_feature_remain_list)
-        print("Stage drop feature list: ", stage_drop_features_list)
+        # print("Remain features", stage_feature_remain_list)
+        # print("Stage drop feature list: ", stage_drop_features_list)
 
         stage += 1
-    df_measure = pd.DataFrame({"drop_feature": stage_drop_features_list,
-                       "stage_record": stage_records,
-                       "stage_highest_weighted_f_score": stage_highest_weighted_f_score,
-                       "accuracy": stage_highest_accuracy, "home_f_score": stage_highest_home_f_score,
-                       "away_f_score": stage_highest_away_f_score, "home_precision": stage_highest_home_precision,
-                       "away_precision": stage_highest_away_precision, "home_recall": stage_highest_home_recall,
-                       "away_recall": stage_highest_away_recall})
-    print(df_measure)
 
-    print("Kapa stage:", stage_kappa_records)
-    print("Stage Kapa score: ", stage_highest_kappa_score)
-    print("Stage kapa feature drop: ", stage_kappa_drop_features_list)
+        # Weighted score: https://towardsdatascience.com/multi-class-metrics-made-simple-part-ii-the-f1-score-ebe8b2c2ca1
+        df_original_score = pd.DataFrame(
+            {"score_name": all_original_scores_name_list, "scores": all_original_scores_list})
+        print(df_original_score)
 
-    df_kappa = pd.DataFrame({"kapa_drop_feature": stage_kappa_drop_features_list,
-                             "kapa_stage_record": stage_kappa_records,
-                             "kapa_score": stage_highest_kappa_score})
+        df_original_score.to_csv("df_original_scores_" + model_name + ".csv")
 
-    print(df_kappa)
+        print("\n" + 100 * "#")
 
+        df_f_measure_evaluation = pd.DataFrame({"drop_feature": stage_drop_features_list,
+                                                "stage_record": stage_records,
+                                                "stage_highest_weighted_f_score": stage_highest_weighted_f_score,
+                                                "accuracy": stage_highest_accuracy,
+                                                "home_f_score": stage_highest_home_f_score,
+                                                "away_f_score": stage_highest_away_f_score,
+                                                "home_precision": stage_highest_home_precision,
+                                                "away_precision": stage_highest_away_precision,
+                                                "home_recall": stage_highest_home_recall,
+                                                "away_recall": stage_highest_away_recall})
 
+        print("\n" + 100 * "#")
+        print(df_f_measure_evaluation)
+        # df_f_measure_evaluation.to_csv("df_f_measure_evaluation_" + model_name + ".csv")
 
+        print("\n" + 100 * "#")
+
+        df_kappa_evaluation = pd.DataFrame({"kapa_drop_feature": stage_kappa_drop_features_list,
+                                            "kapa_stage_record": stage_kappa_records,
+                                            "kapa_score": stage_highest_kappa_score})
+
+        print("\n" + 100 * "#")
+        print(df_kappa_evaluation)
+        # df_kappa_evaluation.to_csv("df_kappa_evaluation_" + model_name + ".csv")
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,22 @@
+chi_square_32_features = 
+["H_OVA", "A_OVA", "H_POT", "A_POT", "H_BOV", "A_BOV", "H_BaseStats", "A_BaseStats", 
+"H_Reactions", "A_Reactions", "H_BallControl", "A_BallControl", "H_DEFENDING", "A_DEFENDING",
+"H_TotalStats", "A_TotalStats", "H_TotalMovement", "A_TotalMovement", "H_SHORT_PASSING", 
+"A_SHORT_PASSING",  "H_ATTACKING", "A_ATTACKING", "H_Vision", "A_Vision",
+  "H_LONG_PASSING", "A_LONG_PASSING","H_TotalMentary", "A_TotalMentary",
+"H_DRIBBLING", "A_DRIBBLING", "H_FINISHING", "A_FINISHING" ]
+ 
+ERT_26_features = 
+["H_OVA", "A_OVA", "H_POT", "A_POT", "H_BOV", "A_BOV",  "H_ATTACKING", "A_ATTACKING", "H_Vision", "A_Vision",
+"H_Reactions", "A_Reactions", "H_DEFENDING", "A_DEFENDING", "H_LONG_PASSING", "A_LONG_PASSING", "H_SHORT_PASSING",
+"A_SHORT_PASSING", "H_Positioning", "A_Positioning", "H_CROSSING", "A_CROSSING", "H_DRIBBLING", "A_DRIBBLING",
+"H_TotalMentary", "A_TotalMentary"]
+
+HeatMap_34_features = ["H_OVA", "A_OVA", "H_POT", "A_POT", "H_BOV", "A_BOV", "H_Reactions", "A_Reactions",
+ "H_BaseStats", "A_BaseStats", "H_TotalStats", "A_TotalStats","H_BallControl", "A_BallControl",
+ "H_ATTACKING", "A_ATTACKING","H_TotalMovement", "A_TotalMovement", "H_SHORT_PASSING", "A_SHORT_PASSING",
+ "H_DEFENDING", "A_DEFENDING", "H_totalSKILL", "A_totalSKILL", "H_Positioning", "A_Positioning",
+ "H_DRIBBLING", "A_DRIBBLING", "H_TotalMentary", "A_TotalMentary", "H_Vision", "A_Vision", 
+ "H_LONG_PASSING", "A_LONG_PASSING"]
+ 
+ 

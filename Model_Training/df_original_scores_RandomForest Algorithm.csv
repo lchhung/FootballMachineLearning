@@ -1,0 +1,16 @@
+,score_name,scores
+0,original_accuracy,0.563573883161512
+1,original_home_f_score,0.6622516556291391
+2,original_away_f_score,0.16279069767441862
+3,original_home_precision,0.5865102639296188
+4,original_away_precision,0.27450980392156865
+5,original_home_recall,0.7604562737642585
+6,original_away_recall,0.11570247933884298
+7,original_macro_avg_f_score,0.47089040642764646
+8,original_macro_avg_precision,0.4870066892837291
+9,original_macro_avg_recall,0.4839721096202257
+10,original_weighted_avg_f_score,0.5330246998504911
+11,original_weighted_avg_precision,0.5262334805635731
+12,original_weighted_avg_recall,0.563573883161512
+13,support,582.0
+14,Kapa_score,0.27976613885505486

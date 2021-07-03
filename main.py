@@ -34,19 +34,19 @@ def main():
 
 
     # # Step 3:
-    # col = ['matchdate', 'teamId', 'playerId', 'firstName',
-    #    'lastName', 'position', 'fullPosition']
-    # #
-    # player = pd.read_csv('player/PL_player_team_2020_2021.csv', usecols=col)
-    # #
-    # print(player.columns)
-    # print(player)
+    col = ['matchdate', 'teamId', 'playerId', 'firstName',
+       'lastName', 'position', 'fullPosition']
     #
-    # playerId = player['playerId']
-    # print(playerId)
+    player = pd.read_csv('player/PL_player_team_2020_2021.csv', usecols=col)
+    #
+    print(player.columns)
+    print(player)
+
+    playerId = player['playerId']
+    print(playerId)
 
 
-    ###########NEW###################
+
 
 if __name__ == "__main__":
     main()
